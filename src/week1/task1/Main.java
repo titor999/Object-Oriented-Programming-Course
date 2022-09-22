@@ -1,4 +1,4 @@
-package weak1.task1;
+package week1.task1;
 
 import java.util.Scanner;
 
