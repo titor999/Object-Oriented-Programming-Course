@@ -9,7 +9,7 @@ public class Main {
         int rows = scanner.nextInt();
 
         for (int i = 1; i <= rows; i++) {
-            // Left Patter
+            // Left Pattern
             for (int j = i; j < rows; j++) {
                 System.out.print(" ");
             }
