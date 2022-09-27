@@ -13,7 +13,6 @@ public class Sqrt {
         System.out.println(b);
     }
 
-
     public static void main(String[] args) {
         System.out.println("Input an integer>>>");
         Scanner scanner = new Scanner(System.in);
