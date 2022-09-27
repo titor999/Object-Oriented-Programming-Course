@@ -39,9 +39,8 @@ public class MergeSort {
         }
     }
 
-    /* A utility function to print array of size n */
-    static void printArray(int[] arr)
-    {
+    // A utility function to print array of size n
+    static void printArray(int[] arr) {
         for (int j : arr) System.out.print(j + " ");
         System.out.println();
     }
