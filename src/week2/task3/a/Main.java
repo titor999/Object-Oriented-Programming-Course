@@ -38,6 +38,6 @@ public class Main {
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.printf("count of numbers equal to the maximum is %s", count);
     }
 }

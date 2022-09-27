@@ -1,5 +1,7 @@
 package week2.task3.b;
 
+import java.util.Scanner;
+
 public class MergeSort {
     public static void mergeSort(int[] a, int n) {
         if (n < 2) {
@@ -45,9 +47,17 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] actual = { 5, 1, 6, 2, 3, 4 };
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the length of the array:");
+        int length = s.nextInt();
+        int[] arrayNumber = new int[length];
 
-        MergeSort.mergeSort(actual, actual.length);
-        printArray(actual);
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < length; i++) {
+            arrayNumber[i] = s.nextInt();
+        }
+
+        MergeSort.mergeSort(arrayNumber, arrayNumber.length);
+        printArray(arrayNumber);
     }
 }
