@@ -12,8 +12,8 @@ public class Main {
         System.out.println("How to sort? (by height id / by average temperature rise) (1/2) >>>");
         int sortingOption = scanner.nextInt();
 
-        String[] names = GetSensorPackage(sensorPackage, sortingOption);
-        for (String s: names) {
+        String[] arr = GetSensorPackage(sensorPackage, sortingOption);
+        for (String s: arr) {
             System.out.println(s);
         }
     }
@@ -23,7 +23,7 @@ public class Main {
 
         switch (sortingOption) {
             case 1 -> {
-                Arrays.sort(arr); // ok
+                Arrays.sort(arr);
                 for (int i = 0; i < arr.length; i++) {
                     arr[i] = arr[i].substring(0, 2) + " " + Double.parseDouble(arr[i].substring(2));
                 }
