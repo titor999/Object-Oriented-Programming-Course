@@ -30,7 +30,11 @@ public class Main {
             }
             case 2 -> {
                 for (int i = 0; i < arr.length; i++) {
-                    arr[i] = arr[i].substring(2) + arr[i].substring(0, 2);
+                    if (arr[i].length() == 3) {
+                        arr[i] = " " + arr[i].substring(2) + arr[i].substring(0, 2);
+                    } else {
+                        arr[i] = arr[i].substring(2) + arr[i].substring(0, 2);
+                    }
                 }
                 Arrays.sort(arr);
                 for (int i = 0; i < arr.length; i++) {
