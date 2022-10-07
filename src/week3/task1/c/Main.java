@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Enter the sensor reading >>>");
         String sensorPackage = scanner.nextLine();
 
-        System.out.println("How to sort? (by height id / by average temperature rise) (1/2) >>>");
+        System.out.println("How to sort? (by height id - 1 / by average temperature rise - 2) >>>");
         int sortingOption = scanner.nextInt();
 
         String[] arr = GetSensorPackage(sensorPackage, sortingOption);
