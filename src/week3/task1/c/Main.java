@@ -15,7 +15,7 @@ public class Main {
         System.out.println("How to sort? (by height id - 1 / by average temperature rise - 2) >>>");
         int sortingOption = scanner.nextInt();
 
-        Integer[][] result = OutputReadings(sensorPackage);
+        Integer[][] result = outputReadings(sensorPackage);
         switch (sortingOption) {
             case 1 -> {
                 Arrays.sort(result, Comparator.comparingInt(o -> o[0]));
@@ -30,7 +30,7 @@ public class Main {
         }
     }
 
-    public static Integer[][] OutputReadings(String readings) throws WrongSensorPackageException {
+    public static Integer[][] outputReadings(String readings) throws WrongSensorPackageException {
         String[] text = readings.split("@");
         Integer[][] output = new Integer[text.length][2];
 
@@ -39,10 +39,11 @@ public class Main {
             try {
                 output[i][0] = Integer.parseInt(text[i].substring(0, 2));
                 output[i][1] = Integer.parseInt(text[i].substring(2));
-            } catch (WrongSensorPackageException e) {
                 if (output[i][0] < 0 || output[i][0] > 99 && output[i][1] < -50 || output[i][1] > 50) {
                     throw new WrongSensorPackageException("Wrong!");
                 }
+            } catch (NumberFormatException | WrongSensorPackageException e) {
+                throw new RuntimeException(e);
             }
         }
         return output;
