@@ -20,7 +20,7 @@ public class Main {
 
     public static Object valueCalculation(String message, String dataType) {
         switch (dataType) {
-            case "Int" -> {
+            case "Integer" -> {
                 try {
                     return Integer.valueOf(message);
                 } catch (NumberFormatException e) {

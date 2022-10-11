@@ -1,11 +1,13 @@
 package week3.task1.c;
 
+import week4.task3.WrongSensorPackageException;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws WrongSensorPackageException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the sensor reading >>>");
         String sensorPackage = scanner.nextLine();
@@ -28,13 +30,20 @@ public class Main {
         }
     }
 
-    public static Integer[][] OutputReadings(String readings) {
+    public static Integer[][] OutputReadings(String readings) throws WrongSensorPackageException {
         String[] text = readings.split("@");
         Integer[][] output = new Integer[text.length][2];
 
-        for (int i = 0; i < text.length; i++){
-            output[i][0] = Integer.parseInt(text[i].substring(0, 2));
-            output[i][1] = Integer.parseInt(text[i].substring(2));
+        int i;
+        for (i = 0; i < text.length; i++) {
+            try {
+                output[i][0] = Integer.parseInt(text[i].substring(0, 2));
+                output[i][1] = Integer.parseInt(text[i].substring(2));
+            } catch (WrongSensorPackageException e) {
+                if (output[i][0] < 0 || output[i][0] > 99 && output[i][1] < -50 || output[i][1] > 50) {
+                    throw new WrongSensorPackageException("Wrong!");
+                }
+            }
         }
         return output;
     }
