@@ -9,7 +9,6 @@ public class Main {
         System.out.println("Enter a path for file >>>");
         String filePath = scanner.nextLine();
         System.out.println(getLines(filePath));
-
     }
 
     public static String getLines(String pathName) {
