@@ -40,7 +40,7 @@ public class Main {
                 output[i][0] = Integer.parseInt(text[i].substring(0, 2));
                 output[i][1] = Integer.parseInt(text[i].substring(2));
                 if (output[i][0] < 0 || output[i][0] > 99 && output[i][1] < -50 || output[i][1] > 50) {
-                    throw new WrongSensorPackageException("Wrong!");
+                    throw new WrongSensorPackageException("You input wrong sensor package values");
                 }
             } catch (NumberFormatException | WrongSensorPackageException e) {
                 throw new RuntimeException(e);
