@@ -13,12 +13,12 @@ public class Main {
         System.out.printf("%s: %s -> %s: %s",
                 userMessage,
                 userMessage.getClass().getSimpleName(),
-                ValueCalculation(userMessage, dataType),
-                ValueCalculation(userMessage, dataType).getClass().getSimpleName()
+                valueCalculation(userMessage, dataType),
+                valueCalculation(userMessage, dataType).getClass().getSimpleName()
                 );
     }
 
-    public static Object ValueCalculation(String message, String dataType) {
+    public static Object valueCalculation(String message, String dataType) {
         switch (dataType) {
             case "Int" -> {
                 try {
