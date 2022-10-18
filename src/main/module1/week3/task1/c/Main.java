@@ -42,7 +42,7 @@ public class Main {
             try {
                 output[i][0] = Integer.parseInt(text[i].substring(0, 2));
                 output[i][1] = Integer.parseInt(text[i].substring(2));
-                if (output[i][1] < -50 || output[i][1] > 50) {
+                if (output[i][0] < 10 && (output[i][1] < -50 || output[i][1] > 50)) {
                     throw new WrongSensorPackageException("You input wrong sensor package values");
                 }
             } catch (NumberFormatException | WrongSensorPackageException e) {
