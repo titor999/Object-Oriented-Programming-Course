@@ -14,6 +14,13 @@ public class Dictionary {
 
         System.out.println("Input lines >>>");
 
+        Map<String, List<String>> map = getStringListMap(scannerWords, count);
+
+        System.out.println(map.size());
+        map.forEach((key, value) -> System.out.printf("%s - %s\n", key, value.toString().replaceAll("[\\[\\]]", "")));
+    }
+
+    private static Map<String, List<String>> getStringListMap(Scanner scannerWords, int count) {
         Map<String, List<String>> map = new TreeMap<>();
 
         for (int i = 0; i < count; i++) {
@@ -24,9 +31,7 @@ public class Dictionary {
                 map.computeIfAbsent(latinWordsDictionary.get(j), k -> new ArrayList<>()).add(latinWordsDictionary.get(0));
             }
         }
-
-        System.out.println(map.size());
-        map.forEach((key, value) -> System.out.printf("%s - %s\n", key, value.toString().replaceAll("[\\[\\]]", "")));
+        return map;
     }
 
     private static List<String> getLatinWords(String input) {
