@@ -1,4 +1,4 @@
-package main.java.module1.week2.task1.a;
+package module1.week2.task1.a;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

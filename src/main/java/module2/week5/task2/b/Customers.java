@@ -1,4 +1,4 @@
-package main.java.module2.week5.task2.b;
+package module2.week5.task2.b;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package main.java.module2.week5.task3.a;
+package module2.week5.task3.a;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -18,6 +18,10 @@ public class RemoveDuplicates {
             arrStr[i] = inputStr.nextLine();
         }
 
+        remoteDuplicates(arrStr);
+    }
+
+    private static void remoteDuplicates(String[] arrStr) {
         System.out.printf("Результат: %s", removeDuplicates(arrStr).
                 toString().
                 replaceAll("^\\[|]$", ""));

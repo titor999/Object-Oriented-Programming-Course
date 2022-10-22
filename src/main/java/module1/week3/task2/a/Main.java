@@ -1,4 +1,4 @@
-package main.java.module1.week3.task2.a;
+package module1.week3.task2.a;
 import java.util.regex.Pattern;
 import java.util.Scanner;
 

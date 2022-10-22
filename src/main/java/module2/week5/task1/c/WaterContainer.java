@@ -1,5 +1,6 @@
-package main.java.module2.week5.task1.c;
-import main.resources.Util;
+package module2.week5.task1.c;
+import util.Util;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

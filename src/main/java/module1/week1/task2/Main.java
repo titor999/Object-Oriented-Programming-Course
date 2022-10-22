@@ -1,4 +1,4 @@
-package main.java.module1.week1.task2;
+package module1.week1.task2;
 
 public class Main {
     public static void main(String[] args) {

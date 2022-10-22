@@ -1,4 +1,4 @@
-package main.java.module1.week4.task1;
+package module1.week4.task1;
 
 import java.io.*;
 import java.util.Scanner;

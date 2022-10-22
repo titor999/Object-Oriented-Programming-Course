@@ -1,4 +1,4 @@
-package main.java.module2.week5.task2.a;
+package module2.week5.task2.a;
 
 import java.util.*;
 

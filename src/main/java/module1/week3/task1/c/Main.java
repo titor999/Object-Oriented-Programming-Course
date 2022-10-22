@@ -1,6 +1,6 @@
-package main.java.module1.week3.task1.c;
+package module1.week3.task1.c;
 
-import main.java.module1.week4.task3.WrongSensorPackageException;
+import module1.week4.task3.WrongSensorPackageException;
 
 import java.util.Arrays;
 import java.util.Comparator;

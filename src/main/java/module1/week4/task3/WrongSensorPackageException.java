@@ -1,4 +1,4 @@
-package main.java.module1.week4.task3;
+package module1.week4.task3;
 
 public class WrongSensorPackageException extends RuntimeException {
     // using in module1.week3.task1c
