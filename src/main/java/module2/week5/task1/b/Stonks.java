@@ -1,5 +1,5 @@
 package main.java.module2.week5.task1.b;
-import main.java.module2.week5.util.Util;
+import main.resources.Util;
 
 import java.util.*;
 

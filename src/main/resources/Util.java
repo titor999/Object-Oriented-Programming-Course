@@ -1,4 +1,4 @@
-package main.java.module2.week5.util;
+package main.resources;
 
 import java.util.ArrayList;
 import java.util.Arrays;

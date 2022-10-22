@@ -2,8 +2,8 @@ package main.java.module2.week5.task1.a;
 
 import java.util.*;
 
-import static main.java.module2.week5.util.Util.convertListStringToIntegerList;
-import static main.java.module2.week5.util.Util.convertStringToList;
+import static main.resources.Util.convertListStringToIntegerList;
+import static main.resources.Util.convertStringToList;
 
 public class Permutations {
     public static void main(String[] args) {
