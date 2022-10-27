@@ -27,8 +27,7 @@ public class RemoveDuplicates {
                 replaceAll("^\\[|]$", ""));
     }
 
-    public static LinkedHashSet<String> removeDuplicates(String[] arr)
-    {
+    public static LinkedHashSet<String> removeDuplicates(String[] arr) {
         return new LinkedHashSet<>(Arrays.asList(arr));
     }
 }
