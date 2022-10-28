@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Main {
+public class OrderSumInFebruary {
     public static void main(String[] args) {
 
         Customer customer1 = getCustomer(1L, "Richard", 1);
@@ -38,7 +38,6 @@ public class Main {
                 .flatMap(order -> order.getProducts().stream())
                 .mapToDouble(Product::getPrice)
                 .sum();
-
 
         System.out.printf("Order Sum for February is %s", orderSumInFebruary);
     }
