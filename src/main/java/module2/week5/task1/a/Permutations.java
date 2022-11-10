@@ -8,7 +8,7 @@ import static util.Util.convertStringToList;
 public class Permutations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a listArray >>>");
+        System.out.println("Enter a listArray -> ");
         String s = scanner.nextLine();
         System.out.println(perms(convertListStringToIntegerList(convertStringToList(s))));
     }

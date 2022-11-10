@@ -15,7 +15,7 @@ public class Stonks {
         System.out.println(maxProfit(result));
     }
 
-    private static int maxProfit(List<Integer> intList) {
+    public static int maxProfit(List<Integer> intList) {
 
         if (intList.size() < 2) {
             System.out.println("Получение прибыли требует как минимум двух цен в массиве");

@@ -13,7 +13,7 @@ public class OrderSumInFebruary {
         Customer customer2 = getCustomer(2L, "Alexandr", 2);
         Customer customer3 = getCustomer(3L, "Vi", 3);
 
-        Product product1 = getProduct(1L, "Name1", "Name1", 208445.0);
+        Product product1 = getProduct(1L, "motorcycle", "transport", 208445.0);
         Product product2 = getProduct(2L, "Name2", "Name2", 218445.0);
         Product product3 = getProduct(3L, "Name3", "Name3", 228445.0);
 
